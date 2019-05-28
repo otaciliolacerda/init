@@ -23,7 +23,6 @@ The script kickstarts the machine by installing/configuring:
 * Automatic copying of software dotfiles `.vimrc`
 * Automatic setup of iTerm2 preferences and profiles
 * Automatic copying and sourcing of my custom dotfiles `.zshrc`
-* Automatic setup of iStats Menus 6
 
 Check the script to know exactly what it does.
 
