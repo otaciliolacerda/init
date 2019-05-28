@@ -5,7 +5,7 @@ echo "😍 Kickstarting new machine.."
 echo
 sleep 2
 
-INITDIR=~/workspace/wormangel/init
+INITDIR=~/workspace/otaciliolacerda/init
 # OSX Tweaks
 echo "🖱 Setting up OSX tweaks..."
 echo
@@ -67,7 +67,7 @@ echo
 echo "🐛 Creating workspace and cloning general init project..."
 echo
 mkdir ~/workspace
-git clone git@github.com:wormangel/init.git $INITDIR
+git clone git@github.com:otaciliolacerda/init.git $INITDIR
 cp $INITDIR/.ssh/config ~/.ssh/config
 
 # Install all needed software
