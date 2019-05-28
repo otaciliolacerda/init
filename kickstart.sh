@@ -76,7 +76,7 @@ echo
 echo "WARNING: java8 is not available anymore with Homebrew due tue Oracle licensing bullshit."
 echo "Please manually download it and install from https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"
 echo
-brew cask install google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker istat-menus dropbox xquartz gimp
+brew cask install google-chrome spectacle atom telegram spotify intellij-idea postgres pgadmin4 postman docker dropbox xquartz gimp
 brew install python3 go glide node jq z imagemagick hub maven awscli bash icdiff mono
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE # Disable swipe navigation
 
@@ -91,13 +91,11 @@ echo
 echo "This step will:"
 echo " * Copy .vimrc to home"
 echo " * Copy .zshrc to home"
-echo " * Copy iStats settings to home"
 echo " * Copy iTerm2 profiles to the appropriate place"
 echo "   * NOTE: iTerm2 preferences need to be loaded manually, check the final instructions."
 echo
 cp $INITDIR/.zshrc ~/
 cp $INITDIR/.vimrc ~/
-cp $INITDIR/istats.ismp ~/
 mkdir -p ~/Library/Application Support/iTerm2/DynamicProfiles
 cp $INITDIR/iTerm2/profiles.json ~/Library/Application Support/iTerm2/DynamicProfiles
 
@@ -138,9 +136,6 @@ echo
 echo " 💻 iTerm2:"
 echo "  ⚙️  Options > Preferences > General > Load preferences from a custom folder or URL > $INITDIR/iTerm2"
 echo
-echo " 🌡  iStats Menus 6:"
-echo "  ⚙️  iStats Menus - Registration - Key can be found on Gmail under 'istats order'"
-echo "  ⚙️  File > Import Settings > ~/istats.ismp"
 echo " 📦 Dropbox:"
 echo "  ⚙️  Selective Sync: configure to sync at least /docs"
 echo
